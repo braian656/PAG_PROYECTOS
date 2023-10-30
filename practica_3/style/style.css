@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 5px ;
+}
+
+form input{
+  padding: 0.5rem 1rem;
+  background-color: #222;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #1AACAC;
+  margin: 3% 0;
+  color: #1AACAC;
+}
+
+form button{
+  margin-top: 5%;
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding: 1rem;
+  background: #000;
+  border: 5px solid #000;
+  color: #fff;
+  transition: 0.3s ease;
+}
+button:hover{
+  border: 5px solid #1AACAC;
+  color: #1AACAC;
+}
+button:active{
+  transform: translateY(5px);
+  letter-spacing: 0.2rem;
+}
+.result{
+  position: absolute;
+  bottom: 5%;
+  border-radius: 20px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+}
+.result .tu_materia{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #fff;
+}

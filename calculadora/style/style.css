@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #2B2730;
+}
+
+.wrapper{
+	z-index: 1000;
+	box-shadow: 0px 10px 100px -3px rgba(0,0,0,0.1);
+	background-color: rgba(5, 5, 5, 0.83);
+	width: 320px;
+	border-radius: 8px;
+	
+}
+.wrapper .input{
+	background-color: rgba(5, 5, 5, 0.83);
+	color: #fff;
+	text-align: right;
+	padding-right: 10px;
+	outline: none;
+	border: none;
+	width: 100%;
+	height: 100px;
+	margin-top: 8px;
+	font-weight: 500;
+	font-size: 40px;
+}
+.input-border{
+	border-bottom: 2px solid blue;
+}
+.wrapper .buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 2px;
+	grid-row-gap: 2px;
+}
+.wrapper .buttons .btn{
+	background-color: rgba(5, 5, 5, 0.64);
+	padding: 0.9rem 1.5rem;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	border: none;
+	outline: none;
+	border: 2px solid #0000;
+}
+.wrapper .buttons .btn:active{
+	background-color: rgba(5, 5, 5, 0.83);
+}
+.buttons .btn:hover{
+	background-color: #282828;
+}
+.wrapper .buttons .dark{
+	background-color: #282828;
+}
+.wrapper .buttons .fa-delete-left{
+	font-size: 22px;
+}
+.buttons .dark:hover{
+	background-color: rgba(5, 5, 5, 0.64);
+}
+.wrapper .buttons .blue{
+	background-color: rgba(0, 180, 248, 0.72);
+}
+.wrapper .buttons .blue:hover{
+	background-color: rgba(0, 130, 198, 0.72);
+}

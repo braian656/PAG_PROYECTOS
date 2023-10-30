@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+}
+
+
+header{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background-color: #141E46;
+	height: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: #fff;
+	text-align: center;
+}
+
+.box_central{
+	width: 25rem;
+}
+.box_central .input{
+	padding: 0.3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box_central .input .contraseña{
+	font-size: 24px;
+	padding: 0 0.4rem;
+	width: 280px;
+	background-color: #fff;
+	height: 50px;
+	border: none;
+	border-bottom: 2px solid #141E46;
+	outline: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+.box_central .input .btn{
+	width: 100px;
+	height: 40px;
+	padding: 0.5rem;
+	border: none;
+	outline: none;
+	background-color: #141E46;
+	color: #fff;
+	margin-left:  1rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.span{
+	padding: 0.3rem;
+	display: flex;
+	flex-direction: column;
+}
+.invalido{
+	color: #C70039;
+}
+.valido{
+	color: green;
+	text-decoration: line-through;
+}
+
+.box_central .span .requerimientos{
+	font-size: 12px;
+	margin: 0.2rem 0;
+	letter-spacing: 0.1rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}

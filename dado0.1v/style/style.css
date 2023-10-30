@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #191717;
+}
+
+.input_empty{
+	display: block;
+	position: absolute;
+	width: 21.875rem;
+	height: 6.25rem;
+	background-color: #191717;
+	border: 2px solid #ea0c08;
+	color: #ea0c08;
+	font-size: 2.625rem;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 500;
+	text-align: center;
+	z-index: 1000;
+	opacity: 0;
+	display: none;
+}
+
+.box_dice{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	height: 18.75rem;
+}
+.dice{
+	
+	height: 12.5rem;
+	width: 12.5rem;
+	border-radius: 1.875rem;
+	background-color: #00C0E0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.dice .front{
+	height: 12.5rem;
+	width: 12.5rem;
+}
+.front img{
+	width: 100%;
+	height: 100%;
+}
+.btn_random{
+	border-radius: 50%;
+	padding: 0.5rem;
+	display: grid;
+	place-content: center;
+	background-color: transparent;
+	border: none;
+}
+.btn_random i{
+	font-size: 3.125rem;
+	text-align: center;
+	color: #ea0c08;
+	transition:  0.3s ease-in-out;
+}
+.btn_random i:hover{
+	color: #40F8FF;
+}
+
+.h2{
+	position: absolute;
+	bottom: 5rem;
+	min-width: 18.75rem;
+	height: 3.125rem;
+	background-color: #40F8FF;
+	border-radius: 1.25rem;
+	font-family: 'Roboto',sans-serif;
+	text-align: center;
+	font-weight: 300;
+	font-size: 2rem;
+	padding: 0.3rem;
+	justify-content: center;
+   	display: none;
+}
+
+
+
+.box_show{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #191717;
+/* 	height: 400px; */
+	width: 25rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	z-index: 300;
+}
+.box_show .box_input{
+	height: 5rem;
+	display: flex;
+	padding: 0.5rem;
+	align-items: center;
+	font-weight: 500;
+	width: 100%;
+}
+.box_show .box_input .img{
+	height: 3.125rem;
+	width: 3.125rem;
+	background-size: cover;
+	background-position: center;
+	background-color: #fff;
+	border-radius: 7px;
+}
+.box_show .box_input .img1{
+	background-image: url('../img/dado/cara_1.png');
+}
+.box_show .box_input .img2{
+	background-image: url('../img/dado/cara_2.png');
+}
+.box_show .box_input .img3{
+	background-image: url('../img/dado/cara_3.png');
+}
+.box_show .box_input .img4{
+	background-image: url('../img/dado/cara_4.png');
+}
+.box_show .box_input .img5{
+	background-image: url('../img/dado/cara_5.png');
+}
+.box_show .box_input .img6{
+	background-image: url('../img/dado/cara_6.png');
+}
+
+.box_input .input{
+	margin: 0 1rem;
+	height: 3.125rem;
+	width: 80%;
+	border-radius: 7px;
+	outline: none;
+	font-size: 2.125rem;
+	letter-spacing: 2px;
+	padding: 0 5px;
+	border: none;
+	border-bottom: 2px solid #40F8FF;
+}
+.box_show .btn_save{
+	width: 50%;
+	margin: 0 auto;
+	background-color: #40F8FF;
+	border-radius: 7px;
+	height: 3.125rem;
+	font-size: 1.375rem;
+	border: none;
+	outline: none;
+	transition: 0.3s ease-in-out;
+}
+
+.box_show .btn_save:hover{
+	background-color: #00C0E0;
+}
+@keyframes temblor {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes roll {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(720deg);
+    }
+}

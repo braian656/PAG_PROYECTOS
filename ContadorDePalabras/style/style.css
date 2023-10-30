@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #222;
+}
+
+input{
+	background-color: #222;
+	padding: 0.5rem 1rem;
+	border: none;
+	letter-spacing: 0.2rem;
+	outline: none;
+	font-size: 1rem;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 400;
+	border-bottom: 5px solid  #C70039;
+	color: #5CD2E6;
+}
+.result{
+	margin-top: 2rem;
+	color: #5CD2E6;
+	width: 50px;
+	font-size: 2rem;
+	font-weight: 700;
+	display: grid;
+	place-content: center;
+	font-family: 'Roboto',sans-serif;
+}
